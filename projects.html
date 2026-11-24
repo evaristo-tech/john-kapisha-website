@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT THIS: page title + description (shown in the browser tab and Google results) -->
+  <title>Projects — John Kapisha</title>
+  <meta name="description" content="Projects and academic programs by John Kapisha across energy, investments, agriculture, and business." />
+
+  <!-- EDIT THIS: share preview (what WhatsApp / LinkedIn / iMessage show when the link is sent).
+       After hosting, replace yourdomain.com with the real address and add a 1200x630 image at assets/images/share-card.jpg -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — John Kapisha" />
+  <meta property="og:description" content="Projects and academic programs by John Kapisha across energy, investments, agriculture, and business." />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/share-card.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/projects.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0A0E17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D4A95F'/%3E%3Cstop offset='1' stop-color='%23E8C98A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230A0E17'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Arial' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EJK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Styles are all local files (no internet needed). style.css = design tokens + custom effects; tailwind.css = layout utilities.
+       If you ever add NEW Tailwind classes to a page, rebuild tailwind.css (see README.txt). -->
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body id="top" class="font-body">
+  <div class="grain"></div>
+
+  <!-- ===== NAV (identical on every page — if you add a page, update all pages) ===== -->
+  <header data-nav class="fixed top-0 inset-x-0 z-50 glass-nav">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display font-extrabold text-lg tracking-tight">John Kapisha<span style="color: var(--accent-1);">.</span></a>
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-pill">Résumé</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button data-theme-toggle class="theme-toggle" aria-label="Toggle dark mode"><span data-theme-icon>🌙</span></button>
+        <button data-menu-toggle class="xl:hidden theme-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div data-mobile-menu class="mobile-menu xl:hidden border-t" style="border-color: var(--border);">
+      <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium" aria-label="Mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-link">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-36 pb-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="reveal font-display text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Projects &amp; academic programs</h1>
+      <p class="reveal reveal-delay-1 mb-14 max-w-2xl" style="color: var(--text-secondary);">Selected projects and learning experiences, with the certificates, photos and documents that back them up. Tap a card for the full story.</p>
+      <!-- Filter buttons are created automatically from the project categories -->
+      <div data-filter-bar class="flex flex-wrap gap-2 mb-10 reveal" role="group" aria-label="Filter projects"></div>
+      <div data-project-grid class="grid md:grid-cols-2 gap-6">
+        <!-- EDIT THIS: project 01. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-tucklab" data-role="TuckLab: Energy Program · Dartmouth College" data-timeline="Dec 2025 – Dec 2026" data-summary="As part of the TuckLab: Energy Program, I worked on a project examining how battery storage can contribute to improved energy efficiency in Vermont. The project allowed me to explore the relationship between energy technology, electricity systems, and sustainability." data-result="Strengthened my ability to communicate technical ideas and collaborate with others, and successfully completed all the requirements of TuckLab: Energy." data-focus="Energy transition|Battery storage|Sustainability|Energy efficiency" data-img="assets/images/projects/tucklab-certificate.jpg" data-caption="TuckLab: Energy certificate of completion, issued by the Tuck School of Business and the Arthur L. Irving Institute for Energy &amp; Society." class="card card-signature reveal block overflow-hidden">
+          <div class="cover has-photo contain" style="--tint: #3DBE8B; --pos: center;"><img class="cover-photo" src="assets/images/projects/tucklab-certificate.jpg" alt="TuckLab: Energy certificate of completion, issued by the Tuck School of Business and the Arthur L. Irving Institute for Energy &amp; Society." loading="lazy" /><span class="evidence-chip">📎 Certificate</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Energy</p>
+            <h3 class="font-display font-bold text-lg mb-1">Battery Storage and Energy Efficiency in Vermont</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">TuckLab: Energy Program · Dartmouth College · Dec 2025 – Dec 2026</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A TuckLab project examining how battery storage can improve energy efficiency in Vermont.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 02. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-investment-office" data-role="Dartmouth College Investment Office" data-timeline="Summer 2026" data-summary="During a six-week endowment fellowship, I gained exposure to institutional investing and the decision-making processes involved in managing an investment portfolio. I explored public equities, fixed income, hedge funds, private equity, venture capital, and real assets, and conducted investment-manager due diligence, examining qualitative and quantitative factors relevant to investment evaluation." data-result="Hands-on exposure to how institutional portfolios are constructed and how investment managers are evaluated." data-focus="Investment research|Manager evaluation|Asset allocation|Portfolio construction" class="card card-signature reveal reveal-delay-1 block overflow-hidden">
+          <div class="cover" style="--tint: #D4A95F;"><span class="num" aria-hidden="true">02</span><span class="ico" aria-hidden="true">📈</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Investments</p>
+            <h3 class="font-display font-bold text-lg mb-1">Institutional Investment Research and Due Diligence</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">Dartmouth College Investment Office · Summer 2026</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A six-week endowment fellowship on institutional investing, asset allocation and manager due diligence.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 03. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-260-brands" data-role="260 Brands · Zambia" data-timeline="Mar – Jul 2025" data-summary="During my internship at 260 Brands, I contributed to agricultural projects involving data collection, analysis, validation, and project coordination. I worked with agricultural field data to support project planning, collaborated with the IT and Human Resources departments to improve data organization and workflows, and took part in field sensitization supporting farmers with organic farming practices." data-result="Improved data organization and workflow efficiency by 30%, and helped farmers improve their yield by 60% through organic farming techniques." data-focus="Agriculture|Data validation|Project coordination|Process improvement|Community engagement" data-img="assets/images/projects/260-brands.jpg" data-caption="At 260 Brands, Zambia, with a certificate from the company." class="card card-signature reveal block overflow-hidden">
+          <div class="cover has-photo " style="--tint: #8FBF4D; --pos: 50% 15%;"><img class="cover-photo" src="assets/images/projects/260-brands.jpg" alt="At 260 Brands, Zambia, with a certificate from the company." loading="lazy" /><span class="evidence-chip">📷 On site</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Agriculture & Data</p>
+            <h3 class="font-display font-bold text-lg mb-1">Agricultural Data and Project Support</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">260 Brands · Zambia · Mar – Jul 2025</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Agricultural data analysis and field outreach supporting farmers and project planning in Zambia.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 04. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-research-essay" data-role="Our Moon Education · International School of Geneva (Ecolint)" data-timeline="Apr – Oct 2024" data-summary="Asked to examine a global issue through a Zambian lens, I researched how better farming techniques can help small-scale farmers in the Chiengi district of Luapula Province improve yields, reduce environmental degradation, and enhance sustainability. I combined interviews with local farmers with scholarly and agricultural sources, and examined crop rotation, agroforestry, conservation tillage, regenerative farming, cover cropping, and the role of technology." data-result="Assessed by two teachers from the International School of Geneva (Ecolint) and graded A (86%). The supervising teacher described it as a strong essay with original ideas, excellent communication, and solid research." data-focus="Climate change|Small-scale farming|Sustainable agriculture|Primary research|Environmental science" data-img="assets/images/projects/essay-cover.jpg" data-caption="Cover page of the research essay. The full essay, with its assessment, is available to download below." data-doc="assets/research-essay.pdf" data-doc-name="John-Kapisha-Research-Essay.pdf" data-doc-label="⬇ Download the full essay (PDF)" class="card card-signature reveal reveal-delay-1 block overflow-hidden">
+          <div class="cover has-photo " style="--tint: #A78BFA; --pos: 50% 0%;"><img class="cover-photo" src="assets/images/projects/essay-cover.jpg" alt="Cover page of the research essay. The full essay, with its assessment, is available to download below." loading="lazy" /><span class="evidence-chip">📄 Essay</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Research</p>
+            <h3 class="font-display font-bold text-lg mb-1">Research Essay: Better Farming Techniques for Small-Scale Farmers in Chiengi, Zambia</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">Our Moon Education · International School of Geneva (Ecolint) · Apr – Oct 2024</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A 3,995-word research essay on how better farming techniques can help small-scale farmers improve yields and sustainability. Graded A (86%).</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 05. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-takeoff" data-role="The Takeoff Institute · Remote" data-timeline="Jun – Aug 2026" data-summary="I participated in an intensive eight-week fellowship designed to prepare undergraduate students for professional environments. The program emphasized analytical thinking, business challenges, professional communication, and project management. I worked toward a data-backed business solution for evaluation by an industry advisor, and found solutions to a startup company&#x27;s challenges." data-result="Selected as one of 50 fellows from more than 600 applicants." data-focus="Business analysis|Problem-solving|Professional development|Communication" class="card card-signature reveal block overflow-hidden">
+          <div class="cover" style="--tint: #6C8CF5;"><span class="num" aria-hidden="true">05</span><span class="ico" aria-hidden="true">💡</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Business</p>
+            <h3 class="font-display font-bold text-lg mb-1">Business Problem-Solving and Professional Development</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">The Takeoff Institute · Remote · Jun – Aug 2026</p>
+            <p class="text-sm" style="color: var(--text-secondary);">An eight-week fellowship focused on business problem-solving, professional skills and employer readiness.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 06. Card text = what shows on the grid. The data-* details = what shows in the popup
+             (data-role = organization, data-timeline = dates, data-summary = overview, data-result = key takeaway,
+             data-focus = focus areas separated by | , data-img + data-caption = the evidence picture, data-doc = a PDF download button).
+             The category (small gold text) becomes a filter button automatically. -->
+        <a href="#" data-project id="project-story" data-role="Our Moon Education · Young Leaders Programme" data-timeline="2024" data-summary="Climate change had hit my community in rural Zambia, and at 15 I nearly dropped out of school because my parents could not afford fees, until my Grade 6 teacher recognised my potential and committed to pay my first term. Becoming an Our Moon Young Leader gave me clarity, a growth mindset and a voice: I began educating farmers about sustainability and mentoring other young people to believe in their potential. A four-day journey across 15 districts to reach Our Moon, and then a place at Dartmouth College, became the next chapters of that story." data-result="&quot;Inspiration is a cycle — when you uplift others, you also grow.&quot;" data-focus="Education|Resilience|Leadership|Environment|Community" data-img="assets/images/projects/our-moon-story.jpg" data-caption="Featured page from Our Moon Education&#x27;s report: &quot;From Rural Luapula to Dartmouth College&quot;." class="card card-signature reveal reveal-delay-1 block overflow-hidden">
+          <div class="cover has-photo " style="--tint: #F08A5D; --pos: 50% 0%;"><img class="cover-photo" src="assets/images/projects/our-moon-story.jpg" alt="Featured page from Our Moon Education&#x27;s report: &quot;From Rural Luapula to Dartmouth College&quot;." loading="lazy" /><span class="evidence-chip">📰 Featured</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">My Story</p>
+            <h3 class="font-display font-bold text-lg mb-1">From Rural Luapula to Dartmouth College</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">Our Moon Education · Young Leaders Programme · 2024</p>
+            <p class="text-sm" style="color: var(--text-secondary);">How a rural Zambian community, a Grade 6 teacher's kindness and the Our Moon Young Leaders Programme led to Dartmouth.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== PROJECT POPUP (filled automatically from the card clicked — no need to edit) ===== -->
+  <dialog data-case-modal class="overlay-dialog" aria-labelledby="case-title">
+    <div class="overlay-box case-box">
+      <button type="button" data-case-close class="case-close" aria-label="Close project details">✕</button>
+      <div data-case-cover class="cover"></div>
+      <figure data-case-figure class="case-figure" hidden>
+        <a data-case-figlink href="#" target="_blank" rel="noopener" title="Open full size"><img data-case-img src="" alt="" /></a>
+        <figcaption><span data-case-caption></span> <a data-case-figlink2 href="#" target="_blank" rel="noopener" class="underline">Open full size ↗</a></figcaption>
+      </figure>
+      <div class="case-body">
+        <p data-case-cat class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);"></p>
+        <h2 id="case-title" data-case-title class="font-display text-2xl md:text-3xl font-bold tracking-tight mb-6"></h2>
+        <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+          <div data-case-block><p class="case-label">Organization</p><p data-case-role></p></div>
+          <div data-case-block><p class="case-label">When</p><p data-case-timeline></p></div>
+        </div>
+        <div data-case-block class="mb-6"><h3 class="case-label">Overview</h3><p data-case-summary style="color: var(--text-secondary);"></p></div>
+        <div data-case-block class="mb-6"><h3 class="case-label">Key takeaway</h3><p data-case-result style="color: var(--text-secondary);"></p></div>
+        <div data-case-block class="mb-6"><h3 class="case-label">Focus areas</h3><div data-case-focus class="flex flex-wrap gap-2"></div></div>
+        <a data-case-doc href="#" download class="btn-primary" hidden></a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="px-6 pt-14 pb-8 border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <p class="font-display font-extrabold text-lg mb-2">John Kapisha<span style="color: var(--accent-1);">.</span></p>
+        <!-- EDIT THIS -->
+        <p class="text-sm mb-1" style="color: var(--text-secondary);">Economics | Investments | Energy | Community Impact</p>
+        <p class="text-sm" style="color: var(--text-tertiary);">Learning, growing, and creating meaningful impact.</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+        <a href="index.html" class="nav-link w-fit">Home</a>
+        <a href="projects.html" class="nav-link w-fit">Projects</a>
+        <a href="about.html" class="nav-link w-fit">About</a>
+        <a href="experience.html" class="nav-link w-fit">Experience</a>
+        <a href="education.html" class="nav-link w-fit">Education &amp; Skills</a>
+        <a href="perspectives.html" class="nav-link w-fit">Perspectives</a>
+        <a href="gallery.html" class="nav-link w-fit">Gallery</a>
+        <a href="resume.html" class="nav-link w-fit">Résumé</a>
+        <a href="contact.html" class="nav-link w-fit">Contact</a>
+      </nav>
+      <div class="md:text-right">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: var(--accent-1);">Follow &amp; connect</p>
+        <!-- EDIT THIS: social links. Each icon opens his profile / email. (The Copy-email button and Ctrl+K menu read the FIRST mailto link on the page, so keep John's email icon here.) -->
+        <div class="flex md:justify-end gap-3 mb-4">
+          <a href="https://www.instagram.com/johnkapisha/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/in/john-kapisha-985313315/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="mailto:johnkapisha65@gmail.com" class="social-icon" aria-label="Email John Kapisha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="text-sm"><a href="mailto:johnkapisha65@gmail.com" class="nav-link">johnkapisha65@gmail.com</a></p>
+        <p class="text-sm mt-2"><a href="#top" class="nav-link">Back to top ↑</a></p>
+      </div>
+    </div>
+
+    <!-- ===== DEVELOPER CREDIT (appears in the footer of every page) ===== -->
+    <div class="max-w-6xl mx-auto mt-10 glass rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--accent-1);">Website by</p>
+        <p class="font-display font-bold">Evaristo Chikwama <span class="text-sm font-normal" style="color: var(--text-tertiary);">· Founder of Evartech</span></p>
+        <p class="text-sm" style="color: var(--text-secondary);">Need a website like this? Let's talk.</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <a href="https://wa.me/260979692667" target="_blank" rel="noopener" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">💬 WhatsApp</a>
+        <a href="tel:+260979692667" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">📞 +260 979 692 667</a>
+        <a href="mailto:evatechceopro@gmail.com" data-dev class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">✉️ evatechceopro@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t text-xs" style="border-color: var(--border); color: var(--text-tertiary);">
+      <!-- EDIT THIS -->
+      © 2026 John Kapisha. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

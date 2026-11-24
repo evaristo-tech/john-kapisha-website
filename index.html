@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT THIS: page title + description (shown in the browser tab and Google results) -->
+  <title>John Kapisha — Economics, Investments, Energy & Community Impact</title>
+  <meta name="description" content="Personal website of John Kapisha, a Dartmouth College student and King Scholar interested in economics, investment management, energy, and sustainable development." />
+
+  <!-- EDIT THIS: share preview (what WhatsApp / LinkedIn / iMessage show when the link is sent).
+       After hosting, replace yourdomain.com with the real address and add a 1200x630 image at assets/images/share-card.jpg -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="John Kapisha — Economics, Investments, Energy & Community Impact" />
+  <meta property="og:description" content="Personal website of John Kapisha, a Dartmouth College student and King Scholar interested in economics, investment management, energy, and sustainable development." />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/share-card.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/index.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0A0E17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D4A95F'/%3E%3Cstop offset='1' stop-color='%23E8C98A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230A0E17'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Arial' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EJK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Styles are all local files (no internet needed). style.css = design tokens + custom effects; tailwind.css = layout utilities.
+       If you ever add NEW Tailwind classes to a page, rebuild tailwind.css (see README.txt). -->
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body id="top" class="font-body">
+  <div class="grain"></div>
+
+  <!-- ===== NAV (identical on every page — if you add a page, update all pages) ===== -->
+  <header data-nav class="fixed top-0 inset-x-0 z-50 glass-nav">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display font-extrabold text-lg tracking-tight">John Kapisha<span style="color: var(--accent-1);">.</span></a>
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-pill">Résumé</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button data-theme-toggle class="theme-toggle" aria-label="Toggle dark mode"><span data-theme-icon>🌙</span></button>
+        <button data-menu-toggle class="xl:hidden theme-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div data-mobile-menu class="mobile-menu xl:hidden border-t" style="border-color: var(--border);">
+      <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium" aria-label="Mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-link">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="relative pt-36 pb-24 px-6 overflow-hidden">
+      <div class="aurora"></div>
+      <div class="relative max-w-6xl mx-auto grid lg:grid-cols-5 gap-14 items-center">
+        <div class="lg:col-span-3 text-center lg:text-left">
+          <!-- EDIT THIS: location + time zone (e.g. America/New_York, America/Chicago, America/Los_Angeles) -->
+          <p class="reveal inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-xs font-medium mb-6">
+            <span class="status-dot"></span>
+            <span>Dartmouth College · Hanover, NH</span>
+            <span style="color: var(--text-tertiary);">· <span data-local-time data-tz="America/New_York"></span></span>
+          </p>
+          <!-- EDIT THIS: name -->
+          <h1 class="reveal reveal-delay-1 font-display text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] mb-4">John Kapisha</h1>
+          <!-- EDIT THIS: job title / headline -->
+          <p class="reveal reveal-delay-2 text-xl md:text-2xl font-semibold mb-5" style="color: var(--accent-1);">Aspiring Economist &amp; Changemaker</p>
+          <!-- EDIT THIS: tagline. The rotating word cycles through data-words (separate with | ) -->
+          <p class="reveal reveal-delay-2 max-w-xl mx-auto lg:mx-0 mb-6" style="color: var(--text-secondary);">Dartmouth College student and King Scholar, exploring how <span class="rotator" data-rotate data-words="economics|investing|energy|education">economics</span> can create meaningful opportunities for individuals and communities.</p>
+          <!-- EDIT THIS: focus tags -->
+          <ul class="reveal reveal-delay-3 flex flex-wrap justify-center lg:justify-start gap-2 mb-10">
+            <li class="tag">Economics</li><li class="tag">Investments</li><li class="tag">Energy</li><li class="tag">Community Impact</li>
+          </ul>
+          <div class="reveal reveal-delay-3 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a href="projects.html" class="btn-primary">Explore My Work →</a>
+            <a href="assets/resume.pdf" download="John-Kapisha-Resume.pdf" class="btn-secondary">⬇ Download My Résumé</a>
+            <a href="about.html" class="nav-link text-sm font-semibold">About Me</a>
+          </div>
+        </div>
+        <div class="lg:col-span-2 reveal reveal-delay-2 max-w-sm w-full mx-auto">
+        <div class="relative ">
+          <!-- EDIT THIS: profile photo — save it as assets/images/profile.jpg (portrait, ~800x1000). Until then the initials show. -->
+          <div class="portrait">
+            <span class="portrait-mono" aria-hidden="true">JK</span>
+            <img src="assets/images/profile.jpg" alt="Portrait of John Kapisha" onerror="this.remove()" />
+          </div>
+          <div class="float-badge glass" style="left: -0.75rem; bottom: 2.5rem;">🎓 Dartmouth College</div>
+          <div class="float-badge glass" style="right: -0.5rem; top: 2rem;">⭐ King Scholar</div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="px-6 py-24 border-t" style="border-color: var(--border);">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-12 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2">Highlights</h2>
+          <p style="color: var(--text-secondary);">Recognition and programs that have shaped my path.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- EDIT THIS: highlight card -->
+          <div class="card card-signature reveal p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🏆</p>
+            <h3 class="font-display font-bold text-lg">King Scholar</h3>
+            <p class="text-xs font-semibold uppercase tracking-wide mb-3 mt-1" style="color: var(--accent-1);">Dartmouth College</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Awarded a full-tuition scholarship in recognition of academic potential, leadership, and commitment to addressing global poverty.</p>
+          </div>
+          <!-- EDIT THIS: highlight card -->
+          <div class="card card-signature reveal reveal-delay-1 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">📊</p>
+            <h3 class="font-display font-bold text-lg">Endowment Fellow</h3>
+            <p class="text-xs font-semibold uppercase tracking-wide mb-3 mt-1" style="color: var(--accent-1);">Dartmouth Investment Office</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Completed a six-week fellowship focused on institutional investing, portfolio construction, and investment-manager due diligence.</p>
+          </div>
+          <!-- EDIT THIS: highlight card -->
+          <div class="card card-signature reveal reveal-delay-2 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">⚡</p>
+            <h3 class="font-display font-bold text-lg">TuckLab: Energy</h3>
+            <p class="text-xs font-semibold uppercase tracking-wide mb-3 mt-1" style="color: var(--accent-1);">Tuck School of Business</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Participated in an intensive program exploring energy systems, energy transition, efficiency, and finance.</p>
+          </div>
+          <!-- EDIT THIS: highlight card -->
+          <div class="card card-signature reveal reveal-delay-3 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🚀</p>
+            <h3 class="font-display font-bold text-lg">Takeoff Institute Fellow</h3>
+            <p class="text-xs font-semibold uppercase tracking-wide mb-3 mt-1" style="color: var(--accent-1);">Professional Development</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Selected as one of 50 fellows from more than 600 applicants for an eight-week professional development fellowship.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BY THE NUMBERS (animated counters) ===== -->
+    <section class="px-6 py-20 border-t" style="border-color: var(--border);">
+      <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="reveal">
+          <p class="font-display text-4xl md:text-5xl font-extrabold" style="color: var(--accent-1);"><span data-counter="20" data-suffix="+">0</span></p>
+          <!-- EDIT THIS: number (data-counter), suffix (data-suffix) and label -->
+          <p class="text-sm mt-2" style="color: var(--text-secondary);">Weekend programs planned</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="font-display text-4xl md:text-5xl font-extrabold" style="color: var(--accent-1);"><span data-counter="500" data-suffix="+">0</span></p>
+          <!-- EDIT THIS: number (data-counter), suffix (data-suffix) and label -->
+          <p class="text-sm mt-2" style="color: var(--text-secondary);">Students reached</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="font-display text-4xl md:text-5xl font-extrabold" style="color: var(--accent-1);"><span data-counter="30" data-suffix="%">0</span></p>
+          <!-- EDIT THIS: number (data-counter), suffix (data-suffix) and label -->
+          <p class="text-sm mt-2" style="color: var(--text-secondary);">Workflow efficiency gain</p>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <p class="font-display text-4xl md:text-5xl font-extrabold" style="color: var(--accent-1);"><span data-counter="60" data-suffix="%">0</span></p>
+          <!-- EDIT THIS: number (data-counter), suffix (data-suffix) and label -->
+          <p class="text-sm mt-2" style="color: var(--text-secondary);">Farmer yield improvement</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AREAS OF INTEREST ===== -->
+    <section class="px-6 py-24 border-t" style="border-color: var(--border);">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-12 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2">What interests me</h2>
+          <p style="color: var(--text-secondary);">Where economics meets energy, investing and community.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🏛️</p>
+            <h3 class="font-display font-bold text-lg mb-2">Economics</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">Understanding financial markets, investment decisions, economic systems, and the ways financial resources can support long-term growth.</p>
+          </div>
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal reveal-delay-1 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🔋</p>
+            <h3 class="font-display font-bold text-lg mb-2">Energy and Sustainability</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">Exploring energy transitions, energy efficiency, and the economic implications of sustainable technologies.</p>
+          </div>
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal reveal-delay-2 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🤝</p>
+            <h3 class="font-display font-bold text-lg mb-2">Education and Community Development</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">Valuing initiatives that help individuals develop their potential and access new opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="px-6 py-24 border-t" style="border-color: var(--border);">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-end justify-between mb-12 reveal">
+          <div>
+            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2">Projects &amp; academic programs</h2>
+            <p style="color: var(--text-secondary);">Selected work across energy, investing, agriculture and business.</p>
+          </div>
+          <a href="projects.html" class="hidden md:inline-flex btn-secondary">View all →</a>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+        <!-- EDIT THIS: project 01 preview (full details live on projects.html) -->
+        <a href="projects.html#project-tucklab"  class="card card-signature reveal block overflow-hidden">
+          <div class="cover has-photo contain" style="--tint: #3DBE8B; --pos: center;"><img class="cover-photo" src="assets/images/projects/tucklab-certificate.jpg" alt="TuckLab: Energy certificate of completion, issued by the Tuck School of Business and the Arthur L. Irving Institute for Energy &amp; Society." loading="lazy" /><span class="evidence-chip">📎 Certificate</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Energy</p>
+            <h3 class="font-display font-bold text-lg mb-1">Battery Storage and Energy Efficiency in Vermont</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">TuckLab: Energy Program · Dartmouth College · Dec 2025 – Dec 2026</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A TuckLab project examining how battery storage can improve energy efficiency in Vermont.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 02 preview (full details live on projects.html) -->
+        <a href="projects.html#project-investment-office"  class="card card-signature reveal reveal-delay-1 block overflow-hidden">
+          <div class="cover" style="--tint: #D4A95F;"><span class="num" aria-hidden="true">02</span><span class="ico" aria-hidden="true">📈</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Investments</p>
+            <h3 class="font-display font-bold text-lg mb-1">Institutional Investment Research and Due Diligence</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">Dartmouth College Investment Office · Summer 2026</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A six-week endowment fellowship on institutional investing, asset allocation and manager due diligence.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 03 preview (full details live on projects.html) -->
+        <a href="projects.html#project-260-brands"  class="card card-signature reveal block overflow-hidden">
+          <div class="cover has-photo " style="--tint: #8FBF4D; --pos: 50% 15%;"><img class="cover-photo" src="assets/images/projects/260-brands.jpg" alt="At 260 Brands, Zambia, with a certificate from the company." loading="lazy" /><span class="evidence-chip">📷 On site</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Agriculture & Data</p>
+            <h3 class="font-display font-bold text-lg mb-1">Agricultural Data and Project Support</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">260 Brands · Zambia · Mar – Jul 2025</p>
+            <p class="text-sm" style="color: var(--text-secondary);">Agricultural data analysis and field outreach supporting farmers and project planning in Zambia.</p>
+          </div>
+        </a>
+        <!-- EDIT THIS: project 04 preview (full details live on projects.html) -->
+        <a href="projects.html#project-research-essay"  class="card card-signature reveal reveal-delay-1 block overflow-hidden">
+          <div class="cover has-photo " style="--tint: #A78BFA; --pos: 50% 0%;"><img class="cover-photo" src="assets/images/projects/essay-cover.jpg" alt="Cover page of the research essay. The full essay, with its assessment, is available to download below." loading="lazy" /><span class="evidence-chip">📄 Essay</span></div>
+          <div class="p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color: var(--accent-1);">Research</p>
+            <h3 class="font-display font-bold text-lg mb-1">Research Essay: Better Farming Techniques for Small-Scale Farmers in Chiengi, Zambia</h3>
+            <p class="text-xs mb-3" style="color: var(--text-tertiary);">Our Moon Education · International School of Geneva (Ecolint) · Apr – Oct 2024</p>
+            <p class="text-sm" style="color: var(--text-secondary);">A 3,995-word research essay on how better farming techniques can help small-scale farmers improve yields and sustainability. Graded A (86%).</p>
+          </div>
+        </a>
+        </div>
+        <a href="projects.html" class="md:hidden btn-secondary mt-8 w-full justify-center flex">View all projects →</a>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="px-6 py-24 border-t" style="border-color: var(--border);">
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <!-- EDIT THIS -->
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">Let's connect.</h2>
+        <p class="mb-8" style="color: var(--text-secondary);">I enjoy connecting with people who share interests in economics, finance, investments, sustainability, education, and community development.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="contact.html" class="btn-primary">Get in touch →</a>
+          <a href="assets/resume.pdf" download="John-Kapisha-Resume.pdf" class="btn-secondary">⬇ Download résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="px-6 pt-14 pb-8 border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <p class="font-display font-extrabold text-lg mb-2">John Kapisha<span style="color: var(--accent-1);">.</span></p>
+        <!-- EDIT THIS -->
+        <p class="text-sm mb-1" style="color: var(--text-secondary);">Economics | Investments | Energy | Community Impact</p>
+        <p class="text-sm" style="color: var(--text-tertiary);">Learning, growing, and creating meaningful impact.</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+        <a href="index.html" class="nav-link w-fit">Home</a>
+        <a href="projects.html" class="nav-link w-fit">Projects</a>
+        <a href="about.html" class="nav-link w-fit">About</a>
+        <a href="experience.html" class="nav-link w-fit">Experience</a>
+        <a href="education.html" class="nav-link w-fit">Education &amp; Skills</a>
+        <a href="perspectives.html" class="nav-link w-fit">Perspectives</a>
+        <a href="gallery.html" class="nav-link w-fit">Gallery</a>
+        <a href="resume.html" class="nav-link w-fit">Résumé</a>
+        <a href="contact.html" class="nav-link w-fit">Contact</a>
+      </nav>
+      <div class="md:text-right">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: var(--accent-1);">Follow &amp; connect</p>
+        <!-- EDIT THIS: social links. Each icon opens his profile / email. (The Copy-email button and Ctrl+K menu read the FIRST mailto link on the page, so keep John's email icon here.) -->
+        <div class="flex md:justify-end gap-3 mb-4">
+          <a href="https://www.instagram.com/johnkapisha/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/in/john-kapisha-985313315/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="mailto:johnkapisha65@gmail.com" class="social-icon" aria-label="Email John Kapisha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="text-sm"><a href="mailto:johnkapisha65@gmail.com" class="nav-link">johnkapisha65@gmail.com</a></p>
+        <p class="text-sm mt-2"><a href="#top" class="nav-link">Back to top ↑</a></p>
+      </div>
+    </div>
+
+    <!-- ===== DEVELOPER CREDIT (appears in the footer of every page) ===== -->
+    <div class="max-w-6xl mx-auto mt-10 glass rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--accent-1);">Website by</p>
+        <p class="font-display font-bold">Evaristo Chikwama <span class="text-sm font-normal" style="color: var(--text-tertiary);">· Founder of Evartech</span></p>
+        <p class="text-sm" style="color: var(--text-secondary);">Need a website like this? Let's talk.</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <a href="https://wa.me/260979692667" target="_blank" rel="noopener" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">💬 WhatsApp</a>
+        <a href="tel:+260979692667" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">📞 +260 979 692 667</a>
+        <a href="mailto:evatechceopro@gmail.com" data-dev class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">✉️ evatechceopro@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t text-xs" style="border-color: var(--border); color: var(--text-tertiary);">
+      <!-- EDIT THIS -->
+      © 2026 John Kapisha. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

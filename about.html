@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT THIS: page title + description (shown in the browser tab and Google results) -->
+  <title>About — John Kapisha</title>
+  <meta name="description" content="John Kapisha&#x27;s story: from Zambia to Dartmouth College, and the interests that drive his work." />
+
+  <!-- EDIT THIS: share preview (what WhatsApp / LinkedIn / iMessage show when the link is sent).
+       After hosting, replace yourdomain.com with the real address and add a 1200x630 image at assets/images/share-card.jpg -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About — John Kapisha" />
+  <meta property="og:description" content="John Kapisha&#x27;s story: from Zambia to Dartmouth College, and the interests that drive his work." />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/share-card.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/about.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0A0E17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23D4A95F'/%3E%3Cstop offset='1' stop-color='%23E8C98A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230A0E17'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Arial' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EJK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Styles are all local files (no internet needed). style.css = design tokens + custom effects; tailwind.css = layout utilities.
+       If you ever add NEW Tailwind classes to a page, rebuild tailwind.css (see README.txt). -->
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body id="top" class="font-body">
+  <div class="grain"></div>
+
+  <!-- ===== NAV (identical on every page — if you add a page, update all pages) ===== -->
+  <header data-nav class="fixed top-0 inset-x-0 z-50 glass-nav">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display font-extrabold text-lg tracking-tight">John Kapisha<span style="color: var(--accent-1);">.</span></a>
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-pill">Résumé</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button data-theme-toggle class="theme-toggle" aria-label="Toggle dark mode"><span data-theme-icon>🌙</span></button>
+        <button data-menu-toggle class="xl:hidden theme-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div data-mobile-menu class="mobile-menu xl:hidden border-t" style="border-color: var(--border);">
+      <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium" aria-label="Mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="perspectives.html" class="nav-link">Perspectives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.html" class="nav-link">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-36 pb-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="reveal font-display text-4xl md:text-5xl font-extrabold tracking-tight mb-4">About me</h1>
+      <p class="reveal reveal-delay-1 mb-14 max-w-2xl" style="color: var(--text-secondary);">From Zambia to Dartmouth — the story behind the work.</p>
+
+      <div class="grid md:grid-cols-3 gap-12 mb-24">
+        <div class="reveal max-w-xs w-full mx-auto md:max-w-none">
+        <div class="relative ">
+          <!-- EDIT THIS: profile photo — save it as assets/images/profile.jpg (portrait, ~800x1000). Until then the initials show. -->
+          <div class="portrait">
+            <span class="portrait-mono" aria-hidden="true">JK</span>
+            <img src="assets/images/profile.jpg" alt="Portrait of John Kapisha" onerror="this.remove()" />
+          </div>
+          <div class="float-badge glass" style="left: -0.75rem; bottom: 2.5rem;">🎓 Dartmouth College</div>
+          <div class="float-badge glass" style="right: -0.5rem; top: 2rem;">⭐ King Scholar</div>
+        </div>
+          <div class="flex items-center justify-center gap-2 mt-6 text-sm font-medium">
+            <span class="tag">Zambia</span><span aria-hidden="true" style="color: var(--accent-1);">→</span><span class="tag">Hanover, NH</span>
+          </div>
+        </div>
+        <div class="md:col-span-2 reveal reveal-delay-1 space-y-4" style="color: var(--text-secondary);">
+          <h2 class="font-display text-2xl font-bold tracking-tight" style="color: var(--text-primary);">My story</h2>
+          <!-- EDIT THIS: story paragraphs -->
+          <p>My name is John Kapisha, and my journey has taken me from Zambia to Dartmouth College in Hanover, New Hampshire.</p>
+          <p>I have always believed in the importance of education, perseverance, and making the most of opportunities. My experiences have shaped my interest in understanding how economies function, how resources are allocated, and how education and economic opportunities can improve people's lives.</p>
+          <p>At Dartmouth, I am pursuing Economics with an intended minor in Environmental Science. My academic interests continue to develop through exposure to investment management, energy systems, business problem-solving, and research.</p>
+          <p>Outside the classroom, I have gained experience in different professional environments, from agricultural project work in Zambia to student programming and library operations at Dartmouth. These experiences have taught me the importance of adaptability, communication, collaboration, and learning from people with different backgrounds.</p>
+          <p>Being selected as a King Scholar has been an important part of my educational journey. It has also strengthened my commitment to leadership, service, and finding meaningful ways to contribute to society.</p>
+          <p><a href="projects.html#project-story" class="nav-link text-sm font-semibold" style="color: var(--accent-1);">Read the full story: From Rural Luapula to Dartmouth →</a></p>
+        </div>
+      </div>
+
+      <h2 class="reveal font-display text-2xl md:text-3xl font-bold tracking-tight mb-8">What interests me</h2>
+      <div class="grid md:grid-cols-2 gap-6 mb-24">
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🏛️</p>
+            <h3 class="font-display font-bold text-lg mb-2">Economics</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">I am interested in understanding financial markets, investment decisions, economic systems, and the ways financial resources can support long-term growth.</p>
+          </div>
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal reveal-delay-1 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🔋</p>
+            <h3 class="font-display font-bold text-lg mb-2">Energy and Sustainability</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">My interest in environmental science has encouraged me to explore energy transitions, energy efficiency, and the economic implications of sustainable technologies.</p>
+          </div>
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🤝</p>
+            <h3 class="font-display font-bold text-lg mb-2">Education and Community Development</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">I value educational opportunities and community engagement, particularly initiatives that help individuals develop their potential and access new opportunities.</p>
+          </div>
+          <!-- EDIT THIS: interest card -->
+          <div class="card card-signature reveal reveal-delay-1 p-6">
+            <p class="text-2xl mb-3" aria-hidden="true">🌱</p>
+            <h3 class="font-display font-bold text-lg mb-2">Personal and Professional Growth</h3>
+            <p class="text-sm" style="color: var(--text-secondary);">I enjoy challenging myself, learning new skills, connecting with people, and taking on experiences that broaden my perspective.</p>
+          </div>
+      </div>
+
+      <h2 class="reveal font-display text-2xl md:text-3xl font-bold tracking-tight mb-8">Key skills</h2>
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 mb-24">
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Communication & Teamwork</span><span style="color: var(--text-tertiary);">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+        </div>
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal reveal-delay-1">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Research & Data Analysis</span><span style="color: var(--text-tertiary);">80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        </div>
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal reveal-delay-2">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Project Planning & Coordination</span><span style="color: var(--text-tertiary);">85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+        </div>
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal reveal-delay-3">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Microsoft Excel</span><span style="color: var(--text-tertiary);">80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+        </div>
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Financial & Investment Analysis</span><span style="color: var(--text-tertiary);">70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+        </div>
+        <!-- EDIT THIS: skill name + percentage (change both the number and data-level) -->
+        <div class="reveal reveal-delay-1">
+          <div class="flex justify-between text-sm mb-2"><span class="font-medium">Critical Thinking</span><span style="color: var(--text-tertiary);">85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+        </div>
+      </div>
+
+      <div class="card card-signature reveal p-8 md:p-10">
+        <h2 class="font-display text-2xl font-bold tracking-tight mb-3">Beyond academics</h2>
+        <!-- EDIT THIS -->
+        <p class="mb-2" style="color: var(--text-secondary);">Outside my academic and professional commitments, I enjoy playing soccer, reading books, listening to music, watching movies, and going for walks. These activities help me maintain balance and enjoy experiences beyond the classroom.</p>
+        <a href="perspectives.html" class="nav-link inline-block mt-3 text-sm font-semibold" style="color: var(--accent-1);">More on Perspectives →</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="px-6 pt-14 pb-8 border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <p class="font-display font-extrabold text-lg mb-2">John Kapisha<span style="color: var(--accent-1);">.</span></p>
+        <!-- EDIT THIS -->
+        <p class="text-sm mb-1" style="color: var(--text-secondary);">Economics | Investments | Energy | Community Impact</p>
+        <p class="text-sm" style="color: var(--text-tertiary);">Learning, growing, and creating meaningful impact.</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+        <a href="index.html" class="nav-link w-fit">Home</a>
+        <a href="projects.html" class="nav-link w-fit">Projects</a>
+        <a href="about.html" class="nav-link w-fit">About</a>
+        <a href="experience.html" class="nav-link w-fit">Experience</a>
+        <a href="education.html" class="nav-link w-fit">Education &amp; Skills</a>
+        <a href="perspectives.html" class="nav-link w-fit">Perspectives</a>
+        <a href="gallery.html" class="nav-link w-fit">Gallery</a>
+        <a href="resume.html" class="nav-link w-fit">Résumé</a>
+        <a href="contact.html" class="nav-link w-fit">Contact</a>
+      </nav>
+      <div class="md:text-right">
+        <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: var(--accent-1);">Follow &amp; connect</p>
+        <!-- EDIT THIS: social links. Each icon opens his profile / email. (The Copy-email button and Ctrl+K menu read the FIRST mailto link on the page, so keep John's email icon here.) -->
+        <div class="flex md:justify-end gap-3 mb-4">
+          <a href="https://www.instagram.com/johnkapisha/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/in/john-kapisha-985313315/" class="social-icon" target="_blank" rel="noopener" aria-label="John Kapisha on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="mailto:johnkapisha65@gmail.com" class="social-icon" aria-label="Email John Kapisha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="text-sm"><a href="mailto:johnkapisha65@gmail.com" class="nav-link">johnkapisha65@gmail.com</a></p>
+        <p class="text-sm mt-2"><a href="#top" class="nav-link">Back to top ↑</a></p>
+      </div>
+    </div>
+
+    <!-- ===== DEVELOPER CREDIT (appears in the footer of every page) ===== -->
+    <div class="max-w-6xl mx-auto mt-10 glass rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--accent-1);">Website by</p>
+        <p class="font-display font-bold">Evaristo Chikwama <span class="text-sm font-normal" style="color: var(--text-tertiary);">· Founder of Evartech</span></p>
+        <p class="text-sm" style="color: var(--text-secondary);">Need a website like this? Let's talk.</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <a href="https://wa.me/260979692667" target="_blank" rel="noopener" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">💬 WhatsApp</a>
+        <a href="tel:+260979692667" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">📞 +260 979 692 667</a>
+        <a href="mailto:evatechceopro@gmail.com" data-dev class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.82rem;">✉️ evatechceopro@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t text-xs" style="border-color: var(--border); color: var(--text-tertiary);">
+      <!-- EDIT THIS -->
+      © 2026 John Kapisha. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
